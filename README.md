@@ -21,7 +21,7 @@ The project uses MongoDB as a database. If you are on Mac and using Homebrew pac
 ### Start the MongoDB server
 First we need to create the `db` directory where the database files will live in. In your terminal navigate to the `root` of your system by doing `cd ..` until you reach the top directory. You can create the directory by running `sudo mkdir -p /data/db`. Now open a different tab in your terminal and run `mongod` to start the Mongo server.
 
-To make your database ready to consume run
+To make your database ready to consume, open new terminal window and run
 ```
 mongoimport --db policylist --collection policies --file <--path to the db.json--> --jsonArray
 ```
@@ -29,14 +29,16 @@ This will import policies in the database named `policylist`.
 You can find the `db.json` in the project folde.
 
 ### Start the node server
-Star node server to activate your web API. Go to the root folder and run
+Star node server to activate your web API. Open new terminal window. Go to the root folder and run
 ```
 node app.js
 ```
 
 ### Run the Application
 
-Go to `PolicyClient` and run
+Open new terminal window. From the project root folder, go to `PolicyClient`, which is our Angular application. 
+To install the dependencies run `npm install`
+To make the application up in browser run
 ```
 ng serve
 ```
