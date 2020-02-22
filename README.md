@@ -47,7 +47,7 @@ And now you should be able to see the app at http://localhost:4200
 
 ## Later improvements
 
-* unit/integration testing
-* separation of modules
+* Unit/integration testing
+* Separation of modules
 * API authentication
 
